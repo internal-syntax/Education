@@ -1,6 +1,6 @@
-package lesson1_variables;
+package languageSyntax;
 
-//Урок 1 Переменные
+//Урок 1. Переменные
 public class lesson1_variables {
     public static void main(String[] args) {
         task1();
