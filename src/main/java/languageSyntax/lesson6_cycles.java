@@ -1,5 +1,6 @@
 package languageSyntax;
 
+//Урок 6. Циклы
 public class lesson6_cycles {
     public static void main(String[] args) {
         task1();
