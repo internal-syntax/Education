@@ -3,7 +3,7 @@ package languageSyntax;
 import java.time.LocalDate;
 
 //Урок 10. Методы
-public class lesson10_methods {
+public class Lesson10_Methods {
 
     public static void main(String[] args) {
         task1();

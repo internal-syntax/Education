@@ -3,7 +3,7 @@ package languageSyntax;
 import java.util.Arrays;
 
 // Урок 8. Массивы
-public class lesson8_arrays {
+public class Lesson8_Arrays {
     public static void main(String[] args) {
         task1();
         task2();

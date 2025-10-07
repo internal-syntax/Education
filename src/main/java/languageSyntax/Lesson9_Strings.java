@@ -1,7 +1,7 @@
 package languageSyntax;
 
 //Урок 9. Строки
-public class lesson9_strings {
+public class Lesson9_Strings {
     public static void main(String[] args) {
         task1();
         task2();

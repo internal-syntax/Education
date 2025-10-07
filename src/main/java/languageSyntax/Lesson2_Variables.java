@@ -1,7 +1,7 @@
 package languageSyntax;
 
 //Урок 2. Переменные
-public class lesson2_variables {
+public class Lesson2_Variables {
     public static void main(String[] args) {
         task1();
         task2();

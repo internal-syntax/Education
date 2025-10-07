@@ -1,7 +1,7 @@
 package languageSyntax;
 
 //Урок 3. Условный оператор
-public class lesson3_conditionalOperator {
+public class Lesson3_ConditionalOperator {
     public static void main(String[] args) {
         task1();
         task2();
