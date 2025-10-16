@@ -9,6 +9,7 @@ public class Library {
         Book crimeAndPunishment = new Book(dostoevsky, "Преступление и наказание", 2008);
         System.out.println(tolstoy.getFirstNameAuthor() + " " + tolstoy.getLastNameAuthor() + " - " + warAndPeace.getNameBook() + " " + warAndPeace.getYearPublication());
         warAndPeace.setYearPublication(2010);
-        System.out.println(tolstoy.getFirstNameAuthor() + " " + tolstoy.getLastNameAuthor() + " - " + warAndPeace.getNameBook() + " " + warAndPeace.getYearPublication());
+        System.out.println(warAndPeace);
+        System.out.println(crimeAndPunishment);
     }
 }

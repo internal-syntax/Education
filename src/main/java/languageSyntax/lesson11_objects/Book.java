@@ -1,5 +1,7 @@
 package languageSyntax.lesson11_objects;
 
+import java.util.Objects;
+
 public class Book {
     private Author author;
     private String nameBook;
@@ -12,18 +14,42 @@ public class Book {
     }
 
     public Author getAuthor() {
-        return author;
+        return this.author;
     }
 
     public String getNameBook() {
-        return nameBook;
+        return this.nameBook;
     }
 
     public int getYearPublication() {
-        return yearPublication;
+        return this.yearPublication;
     }
 
     public void setYearPublication(int yearPublication) {
+        if (yearPublication < 0) {
+            throw new IllegalArgumentException("Год издания не может быть отрицательным");
+        }
         this.yearPublication = yearPublication;
+    }
+
+    @Override
+    public String toString() {
+        return "Book{" +
+                "author=" + author +
+                ", nameBook='" + nameBook + '\'' +
+                ", yearPublication=" + yearPublication +
+                '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return yearPublication == book.yearPublication && Objects.equals(author, book.author) && Objects.equals(nameBook, book.nameBook);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(author, nameBook, yearPublication);
     }
 }
